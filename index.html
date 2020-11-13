@@ -5,36 +5,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+ 
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css"  href="./style.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Project stylesheet -->
+  <link rel="stylesheet" type="text/css"  href="./style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
+  <title>micskeil | FAQ Accordion Card</title>
+
 </head>
+
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <div class = 'container-fluid fill d-flex justify-content-center align-items-center'>
+    <div class='content cotainer'>
+      <div class='faq-container shadow row'>
+        <div class = 'illustration col d-flex align-items-center'>
+          <div class = 'inside d-flex align-items-center'>
+          <img class = 'back' src = 'images/bg-pattern-desktop.svg'>
+          </div> 
+          <img class = 'outside' src = 'images/illustration-box-desktop.svg'>
+          <div class = 'inside inside d-flex align-items-center'>
+            <img src = 'images/illustration-woman-online-desktop.svg'>
+          </div>  
+        </div>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+        <div class = 'faq col p-5'>
+          <h3 class='font-weight-bold d-inline-block pt-3 pb-3'>FAQ</h3>
+          
+          <div class="accordion p-0" id="accordionExample">
+            <div class="card border-bottom p-0 pb-3 pt-3">
+              <div class="card-header p-0 " id="headingOne">
+                <h2 class="mb-0">
+                  <button class="container d-flex justify-content-between align-items-center btn btn-link p-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   How many team members can I invite? <img class = "flip" src = 'images/icon-arrow-down.svg'>
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body p-0">
+                  You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+                </div>
+              </div>
+            </div>
+            <div class="card border-bottom p-0 pb-3 pt-3">
+              <div class="card-header p-0" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="container d-flex justify-content-between align-items-center btn btn-link p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What is the maximum file upload size? <img class = "flip" src = 'images/icon-arrow-down.svg'>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body p-0">
+                  No more than 2GB. All files in your account must fit your allotted storage space.
+                </div>
+              </div>
+            </div>
+            <div class="card border-bottom p-0 pb-3 pt-3">
+              <div class="card-header p-0" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="container d-flex justify-content-between align-items-center btn btn-link p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    How do I reset my password? <img class = "flip" src = 'images/icon-arrow-down.svg'>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body p-0">
+                  Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.
+                </div>
+              </div>
+            </div>
+            <div class="card border-bottom p-0 pb-3 pt-3">
+              <div class="card-header p-0" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="container d-flex justify-content-between align-items-center btn btn-link p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Can I cancel my subscription? <img class = "flip" src = 'images/icon-arrow-down.svg'>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body p-0">
+                  Yes! Send us a message and we’ll process your request no questions asked.
+                </div>
+              </div>
+            </div>
+            <div class="card border-bottom p-0 pb-3 pt-3">
+              <div class="card-header p-0" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="container d-flex justify-content-between align-items-center btn btn-link p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Do you provide additional support? <img class = "flip" src = 'images/icon-arrow-down.svg'>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body p-0">
+                  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+      <div class="coder row justify-content-center">
+        Coded by &nbsp;  <a href="#">micskeil</a>
+       </div>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    </div>
+</div>
 </body>
 </html>

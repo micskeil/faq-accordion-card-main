@@ -1,0 +1,141 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+html {
+    height: 100%; 
+    
+  } 
+
+body {
+    background-image: linear-gradient(#AF68EA, #6462E7);
+    height: 100%;
+}
+
+.fill {
+    height: 100%;
+}
+
+
+.coder {
+  font-size: 11px; text-align: center;
+  min-width: 920px;     
+}
+.coder a { 
+    color: white;
+    &:hover {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+    }
+}
+
+.content{
+    max-width: 66%;
+}
+
+.faq-container {
+    background-color: white;
+    border-radius: 2rem;
+    min-width: 920px;
+    min-height: 510px;
+    max-width: 920px;
+    max-height: 510px;
+  }
+  
+.illustration {
+  display: relative;
+  
+  
+  .outside {
+      position: absolute;
+      left: -95px;
+      top: 209px;
+      z-index: 2;
+      overflow: visible;
+  }   
+  .inside {
+    position: absolute;
+    margin-left: -1rem;
+    overflow: hidden;
+    max-width: 460px;
+    max-height: 510px;
+    img {
+      margin-left: -80px;
+      z-index: 1;
+    }
+    .back {
+        margin-left: -580px;
+        margin-top: -150px;
+        z-index: 0;
+        height: 120%;
+      }
+  }
+}
+
+.faq {
+    width: 50%;
+    max-height: 510px;
+    overflow: hidden;
+}
+
+.card {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px #333;
+    border-radius: 0;
+}
+.card-header {
+    background-color: white;
+    border: none;
+}
+
+.bg-light {
+    background-color: white;
+}
+.btn {
+    text-decoration: none;
+    width: 100%;
+
+} 
+
+.btn-link {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    .flip {    
+        -moz-transform: scale(1, -1);
+        -webkit-transform: scale(1, -1);
+        -o-transform: scale(1, -1);
+        -ms-transform: scale(1, -1);
+        transform: scale(1, -1);
+    }
+
+    &:hover {
+      color: #333;
+      text-decoration: none;
+
+    }
+    &:focus {
+      color: #333;
+      text-decoration: none;        
+    }
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+    text-decoration: none;
+}
+.collapsed {
+    font-weight: 400;
+     .flip {    
+        -moz-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
